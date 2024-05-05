@@ -8,9 +8,9 @@ function App() {
 
   useEffect(() => {
     axios.get('https://openapiv1.coinstats.app/coins', {
-      headers: { 'X-API-KEY: 0erpz11U1DbVL1arZLyjoABav1sfCYGeE3VBeLVpBBI='}
+      headers: `X-API-KEY: 0erpz11U1DbVL1arZLyjoABav1sfCYGeE3VBeLVpBBI=`
     }).then(res => console.log(res))
-    .catch(err => console.log(err))
+    .catch(err => console.log(err)) 
   }, [])
 
   return (
