@@ -7,7 +7,13 @@ function App() {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Market Cap</th>
+            <th>Price</th>
+            <th>Available Supply</th>
+            <th>Volume(24hr)</th>
           </tr>
         </thead>
       </table>
