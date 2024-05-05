@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import './App.css'
 
 function App() {
   const [search, setSearch] = useState("")
@@ -33,7 +34,6 @@ function App() {
           {currency.filter((val)=> {
             return val.name.toLowerCase().includes(search.toLowerCase())
           }).map((val) => {
-            // eslint-disable-next-line react/jsx-key
             return <tr>
               <td className="rank">{val.rank}</td>
               <td className="logo">
