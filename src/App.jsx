@@ -34,11 +34,11 @@ function App() {
           {currency.filter((val)=> {
             return val.name.toLowerCase().includes(search.toLowerCase())
           }).map((val) => {
-            return <tr>
+            return <tr key={val.app}>
               <td className="rank">{val.rank}</td>
               <td className="logo">
                 <a href={val.websiteUrl}>
-                  <img src={val.icon} alt=""/>
+                  <img src={val.icon} alt="icon"/>
                 </a>
                 <p>{val.name}</p>
               </td>
