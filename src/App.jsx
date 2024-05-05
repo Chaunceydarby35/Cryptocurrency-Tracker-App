@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function App() {
-  const [search, setSearch] = useState()
+  const [search, setSearch] = useState("")
   const [currency, setCurrency] = useState([])
 
   useEffect(() => {
