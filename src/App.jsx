@@ -7,7 +7,9 @@ function App() {
   const [currency, setCurrency] = useState([])
 
   useEffect(() => {
-    axios.get('')
+    axios.get('https://openapiv1.coinstats.app/coins', {
+      headers: {}
+    })
   }, [])
 
   return (
