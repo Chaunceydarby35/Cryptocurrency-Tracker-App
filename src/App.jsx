@@ -30,7 +30,11 @@ function App() {
           </tr>
         </thead>
         <tbody>
-
+          {currency.filter((val)=> {
+            return val.name.toLowerCase().includes(search.toLowerCase())
+          }).map((val) => {
+            return tr
+          })}
         </tbody>
       </table>
     </div>
