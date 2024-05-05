@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Crypto Currency App</h2>
+      <h2>Crypto Catch</h2>
       <input type="text" placeholder="Search...." onChange={(e) => setSearch(e.target.value)} />
       <table>
         <thead>
