@@ -7,9 +7,9 @@ function App() {
   const [currency, setCurrency] = useState([])
 
   useEffect(() => {
-    axios.get('https://openapiv1.coinstats.app/coins', {
+    axios.get('https://openapiv1.coinstats.app/coins?', {
       headers: `X-API-KEY: 0erpz11U1DbVL1arZLyjoABav1sfCYGeE3VBeLVpBBI=`
-    }).then(res => console.log(res))
+    }).then(res => setCurrency(res.data.result) )
     .catch(err => console.log(err)) 
   }, [])
 
