@@ -1,9 +1,19 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [search, setSearch] = useState()
+  const [currency, setCurrency] = useState([])
+
+  useEffect(() => {
+    axios.get('')
+  }, [])
+
   return (
     <div className="App">
       <h2>Crypto Currency App</h2>
-      <input type="text" placeholder="Search...." />
+      <input type="text" placeholder="Search...." onChange={(e) => setSearch(e.target.value)} />
       <table>
         <thead>
           <tr>
@@ -16,6 +26,9 @@ function App() {
             <th>Volume(24hr)</th>
           </tr>
         </thead>
+        <tbody>
+
+        </tbody>
       </table>
     </div>
   )
